@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Invoice Creater App</title>
+</head>
+
+<body>
+    <script src="index.js"></script>
+
+    <main>
+        <div id="hero">
+            <h2>Invoice Creator</h2>
+            <p>Thanks for choosing Singla Infotech</p>
+        </div>
+
+        <div id="middleSection">
+
+            <div id="serviceTabs">
+                <button id="washCarService" onclick="washCarService()">Wash Car: $10</button>
+                <button id="mowLawnService" onclick="mowLawnService()">Mow Lawn: $20</button>
+                <button id="pullWeedsService" onclick="pullWeedsService()">Pull Weeds: $30</button>
+            </div>
+
+
+            <table id="servicesTables">
+                <tr>
+                    <th>TASK</th>
+                    <th>TOTAL</th>
+                </tr>
+
+                <tr id="washCarTr">
+                    
+                </tr>
+
+                <tr id="mowLawnTr">
+
+                </tr>
+
+                <tr id="pullWeedsTr">
+
+                </tr>
+            </table>
+
+            <hr>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>NOTES</th>
+                        <th>TOTAL AMOUNT</th>
+                    </tr>
+
+                    <tr>
+                        <td id="notes">We accept cash, credit card, or PayPal</td>
+                        <td><b>$<span id="totalValue">0</span></b></td>
+                    </tr>
+                </table>
+
+                <button id="sendInvoice" onclick="sendInvoice()"><i class="fa fa-envelope"></i> Send Invoice</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
